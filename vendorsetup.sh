@@ -1,7 +1,7 @@
 #!/bin/bash
 # Cloning vendor repos
-rm -rf vendor/crdroid
-git clone https://github.com/custom-crdroid/vendor_crdroid.git -b 15.0 vendor/crdroid
+rm -rf vendor/lineage
+git clone https://github.com/custom-crdroid/vendor_crdroid.git -b 15.0 vendor/lineage
 rm -rf vendor/addons
 git clone https://github.com/custom-crdroid/vendor_addons.git -b 15.0 vendor/addons
 
@@ -10,8 +10,8 @@ rm -rf frameworks/libs/systemui
 git clone https://github.com/custom-crdroid/android_frameworks_libs_systemui.git -b 15.0 frameworks/libs/systemui
 rm -rf frameworks/base
 git clone https://github.com/custom-crdroid/frameworks_base.git -b 15.0 frameworks/base
-rm -rf frameworks_av
-git clone https://github.com/custom-crdroid/frameworks_av.git -b 15.0 frameworks_av
+rm -rf frameworks/av
+git clone https://github.com/custom-crdroid/frameworks_av.git -b 15.0 frameworks/av
 rm -rf frameworks/native
 git clone https://github.com/custom-crdroid/frameworks_native.git -b 15.0 frameworks/native
 
