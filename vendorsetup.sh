@@ -14,6 +14,8 @@ rm -rf frameworks/av
 git clone --depth 1 https://github.com/custom-crdroid/frameworks_av.git -b 15.0 frameworks/av
 rm -rf frameworks/native
 git clone --depth 1 https://github.com/custom-crdroid/frameworks_native.git -b 15.0 frameworks/native
+rm -rf vendor/pixel-framework
+git clone --depth 1 https://github.com/custom-crdroid/android_vendor_pixel-framework.git -b 15.0 vendor/pixel-framework
 
 # Cloning packages_apps repos 
 rm -rf packages/apps/Launcher3
