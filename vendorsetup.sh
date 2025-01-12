@@ -9,7 +9,7 @@ git clone --depth 1 https://github.com/custom-crdroid/vendor_addons.git -b 15.0 
 rm -rf frameworks/libs/systemui
 git clone --depth 1 https://github.com/custom-crdroid/android_frameworks_libs_systemui.git -b 15.0 frameworks/libs/systemui
 rm -rf frameworks/base
-git clone --depth 1 https://github.com/custom-crdroid/frameworks_base.git -b 15.0 frameworks/base
+git clone --depth 1 https://github.com/custom-crdroid/android_frameworks_base.git -b 15.0 frameworks/base
 rm -rf frameworks/av
 git clone --depth 1 https://github.com/custom-crdroid/frameworks_av.git -b 15.0 frameworks/av
 rm -rf frameworks/native
@@ -36,5 +36,21 @@ git clone --depth 1 https://github.com/custom-crdroid/packages_apps_OmniStyle.gi
 # Cloning system repos
 rm -rf system/libhwbinder
 git clone --depth 1 https://github.com/custom-crdroid/system_libhwbinder.git -b 15.0 system/libhwbinder
+rm -rf system/security
+git clone --depth 1 https://github.com/custom-crdroid/system_security.git -b 15.0 system/security
+rm -rf system/core
+git clone -depth 1 https://github.com/custom-crdroid/system_core.git -b 15.0 system/core
+
+# Cloning build repos
+rm -rf build/release
+git clone --depth 1 https://github.com/custom-crdroid/build_release.git -b 15.0 build/release
+
+# cloning external repos 
+rm -rf external/boringssl
+git clone --depth 1 https://github.com/custom-crdroid/external_boringssl.git -b 15.0 external/boringssl
+
+# Clone gapps 
+git clone --depth 1 https://gitlab.com/dark.phnx12/vendor_google_gms.git -b fifteen vendor/google/gms
+git clone --depth 1 https://gitlab.com/dark.phnx12/vendor_google_pixel.git -b fifteen vendor/google/pixel
 
 # Finished continue with build
